@@ -1,0 +1,29 @@
+
+  
+<h1>
+  Payment Results
+</h1>
+
+<dl>
+  <dt>APR</dt>
+  <dd><%= sprintf("%.4f%%", params.fetch("user_apr").to_f) %></dd>
+
+  <dt>Number of Years</dt>
+  <dd><%= params.fetch("user_years") %></dd>
+
+  <dt>Principal</dt>
+  <dd><%= sprintf("$%.2f", params.fetch("user_pv").to_f) %></dd>
+
+  <dt>Payment</dt>
+  <dd><%= @payment.to_fs(:currency) %></dd>
+</dl>
+
+  </dd>
+</dl>
+
+<a href="/payment/new">
+  Calculate another payment
+</a>
+
+  </body>
+</html>

@@ -1,42 +1,29 @@
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Target: Omnicalc-1</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-  </head>
-
-  <body>
-    <form action="/payment/results">
+  <form action="/payment/results">
   <div>
-    <label for="apr_input">
+    <label for="user_apr">
       APR
     </label>
 
-    <input id="apr_input" text="text" name="user_apr" placeholder="E.g. 5.42">
+    <input id="user_apr" text="text" name="user_apr" placeholder="E.g. 5.42">
   </div>
 
   <div>
-    <label for="years_input">
+    <label for="user_years">
       Number of years
     </label>
 
-    <input id="years_input" text="text" name="user_years" placeholder="How many years to repay?">
+    <input id="user_years" text="text" name="user_years" placeholder="How many years to repay?">
   </div>
 
   <div>
-    <label for="principal_input">
+    <label for="user_pv">
       Principal
     </label>
 
-    <input id="principal_input" text="text" name="user_pv" placeholder="How much principal?">
+    <input id="user_pv" text="text" name="user_pv" placeholder="How much principal?">
   </div>
 
   <button>
     Calculate monthly payment
   </button>
 </form>
-
-  </body>
-</html>

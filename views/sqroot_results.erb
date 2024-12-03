@@ -1,0 +1,27 @@
+
+<h1>
+  Square Root Results
+</h1>
+
+<dl>
+  <dt>
+    Number
+  </dt>
+  <dd>
+    <%=params.fetch("user_number")%>
+  </dd>
+
+  <dt>
+    Square Root
+  </dt>
+  <dd>
+    <%=params.fetch("user_number").to_f**0.5%>
+  </dd>
+</dl>
+
+<a href="/square_root/new">
+  Calculate another square root
+</a>
+
+  </body>
+</html>
